@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="100%" height="100%">
+  <!-- Pure white background for a clean, professional, high-contrast look -->
+  <rect width="600" height="600" fill="#FFFFFF" />
+
+  <g transform="translate(0, 35)">
+    <!-- SINGLE TOP ARCH LINE (Replacing the two lines with one single clean arc) -->
+    <path d="M 130,225 A 175,175 0 0,1 470,225" fill="none" stroke="#0B2545" stroke-width="3" stroke-linecap="round" />
+
+    <!-- ARCHED TYPOGRAPHY SECTION -->
+    <!-- Invisible text path for arched 'YOSU' text -->
+    <path id="yosu-arch-single" d="M 140,215 A 165,165 0 0,1 460,215" fill="none" stroke="none" />
+    
+    <!-- Arced Text "BEST" in subtle premium gold color -->
+    <text font-family="'Cinzel', 'Georgia', 'Times New Roman', serif" font-weight="900" font-size="46" fill="#C5A059" letter-spacing="16" text-anchor="middle">
+      <textPath href="#yosu-arch-single" startOffset="50%">BEST</textPath>
+    </text>
+
+    <!-- CENTRAL EMBLEM: SEMICIRCULAR CREST / SHIELD SHAPE -->
+    <!-- Dark navy blue semicircular crest shape positioned directly above the book -->
+    <path d="M 200,265 A 100,100 0 0,1 400,265 Z" fill="#0B2545" />
+
+    <!-- Inside the blue crest: Tan-Beige Circular Seal -->
+    <circle cx="300" cy="220" r="38" fill="#C5A059" />
+    <!-- Thin dark border inside circular seal -->
+    <circle cx="300" cy="220" r="33" fill="none" stroke="#0B2545" stroke-width="1.5" />
+
+    <!-- Detailed golden-tan compass rose / stylized medallion pattern inside circular seal -->
+    <g stroke="#0B2545" stroke-width="1">
+      <line x1="300" y1="187" x2="300" y2="253" />
+      <line x1="267" y1="220" x2="333" y2="220" />
+      <line x1="277" y1="197" x2="323" y2="243" />
+      <line x1="277" y1="243" x2="323" y2="197" />
+    </g>
+    <!-- Stylized medallion points -->
+    <polygon points="300,184 303,217 300,220" fill="#0B2545" />
+    <polygon points="300,184 297,217 300,220" fill="#0B2545" opacity="0.7" />
+    <polygon points="300,256 297,223 300,220" fill="#0B2545" />
+    <polygon points="300,256 303,223 300,220" fill="#0B2545" opacity="0.7" />
+    <polygon points="336,220 303,217 300,220" fill="#0B2545" />
+    <polygon points="336,220 303,223 300,220" fill="#0B2545" opacity="0.7" />
+    <polygon points="264,220 297,223 300,220" fill="#0B2545" />
+    <polygon points="264,220 297,217 300,220" fill="#0B2545" opacity="0.7" />
+
+    <!-- Small classic letter 'B' inside a tiny shield at the exact center of medallion -->
+    <path d="M 293,212 C 293,212 300,210 300,210 C 300,210 307,212 307,212 L 307,222 C 307,227 300,231 300,231 C 300,231 293,227 293,222 Z" fill="#0B2545" stroke="#C5A059" stroke-width="0.75" />
+    <text x="300.5" y="222.5" font-family="'Cinzel', 'Georgia', serif" font-weight="900" font-size="11" fill="#C5A059" text-anchor="middle">B</text>
+
+
+    <!-- PROMINENT STYLIZED OPEN BOOK SECTION -->
+    <!-- Inner angled pages in solid tan-beige color (#C5A059) -->
+    <!-- Left tan-beige page -->
+    <path d="M 300,305 C 235,268 160,278 95,312 C 155,340 230,333 300,336 Z" fill="#C5A059" stroke="#A38243" stroke-width="1.2" />
+    <!-- Right tan-beige page -->
+    <path d="M 300,305 C 365,268 440,278 505,312 C 445,340 370,333 300,336 Z" fill="#C5A059" stroke="#A38243" stroke-width="1.2" />
+
+    <!-- Outer prominent wings in deep navy blue (#0B2545) -->
+    <!-- Left navy outer wing -->
+    <path d="M 300,320 C 185,270 80,296 5,375 C 100,359 198,351 300,343 Z" fill="#0B2545" />
+    <!-- Right navy outer wing -->
+    <path d="M 300,320 C 415,270 520,296 595,375 C 500,359 402,351 300,343 Z" fill="#0B2545" />
+    
+    <!-- Spine vertical separator -->
+    <path d="M 300,320 L 300,343" stroke="#C5A059" stroke-width="4" stroke-linecap="round" />
+
+
+    <!-- HORIZONTAL BOTTOM TYPOGRAPHY SECTION -->
+    <!-- "SCHOOLING ACADEMY" in horizontal, bold, solid, dark navy blue, sans-serif font -->
+    <text x="300" y="460" font-family="'Montserrat', 'Inter', 'Helvetica', 'Arial', sans-serif" font-weight="900" font-size="33" fill="#0B2545" text-anchor="middle" letter-spacing="4">SCHOOLING ACADEMY</text>
+  </g>
+</svg>

@@ -1,0 +1,6 @@
+{
+  "name": "The Best Schooling Academy",
+  "description": "Welcome to The Best Schooling Academy website.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
