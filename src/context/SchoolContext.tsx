@@ -33,7 +33,7 @@ interface SchoolContextType {
 }
 
 const defaultSettings: SchoolSettings = {
-  heroTitle: "YOSU INTERNATIONAL SCHOOL",
+  heroTitle: "THE BEST SCHOOLING ACADEMY",
   heroSubtitle: "Nurturing Excellence, Building Futures",
   phone: "+92 344 9757557",
   email: "info@d.yosu.edu.pk",
@@ -82,7 +82,11 @@ export function SchoolProvider({ children }: { children: ReactNode }) {
     const ref = doc(db, "schoolSettings", "main");
     const unsub = onSnapshot(ref, async (snap) => {
       if (snap.exists()) {
-        setSettings({ ...defaultSettings, ...snap.data() } as SchoolSettings);
+        const data = snap.data() as Partial<SchoolSettings>;
+        if (data.heroTitle === "YOSU INTERNATIONAL SCHOOL") {
+          data.heroTitle = "THE BEST SCHOOLING ACADEMY";
+        }
+        setSettings({ ...defaultSettings, ...data } as SchoolSettings);
       } else {
         await setDoc(ref, defaultSettings);
       }

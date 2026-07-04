@@ -1,6 +1,6 @@
 {
-  "name": "Yosu International School",
-  "description": "Welcome to Yosu International School website.",
+  "name": "The Best Schooling Academy",
+  "description": "Welcome to The Best Schooling Academy website.",
   "requestFramePermissions": [],
   "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
 }

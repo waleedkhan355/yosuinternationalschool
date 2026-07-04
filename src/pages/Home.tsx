@@ -44,7 +44,7 @@ export default function Home() {
             transition={{ duration: isMobile ? 0.4 : 0.7 }}
           >
             <span className="inline-block px-4 py-1.5 bg-[hsl(43_90%_52%)/20] border border-[hsl(43_90%_52%)/40] text-[hsl(43_90%_70%)] text-xs font-semibold tracking-widest uppercase rounded-full mb-6">
-              Deolai, Swat Pakistan · Est. d.yosu.edu.pk
+              Deolai, Swat Pakistan · d.yosu.edu.pk
             </span>
           </motion.div>
 
@@ -156,7 +156,7 @@ export default function Home() {
       <section className="py-16 bg-[hsl(152_25%_96%)]">
         <div className="max-w-6xl mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="font-serif text-3xl sm:text-4xl font-bold mb-2">Why Choose YOSU?</h2>
+            <h2 className="font-serif text-3xl sm:text-4xl font-bold mb-2">Why Choose The Best Schooling Academy?</h2>
             <div className="gold-divider max-w-[120px] mx-auto" />
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
