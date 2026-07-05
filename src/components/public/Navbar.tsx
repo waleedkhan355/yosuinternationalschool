@@ -26,7 +26,7 @@ export default function Navbar() {
             </div>
             <div className="leading-tight">
               <p className="font-serif font-bold text-sm sm:text-base text-white tracking-wide">THE BEST SCHOOLING ACADEMY</p>
-              <p className="text-[hsl(43_90%_52%)] text-[10px] sm:text-xs font-medium tracking-widest uppercase">Deolai, Swat</p>
+              <p className="text-[hsl(43_90%_52%)] text-[10px] sm:text-xs font-medium tracking-widest uppercase">Mingora, Swat</p>
             </div>
           </Link>
 

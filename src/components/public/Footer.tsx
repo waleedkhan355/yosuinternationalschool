@@ -47,12 +47,12 @@ export default function Footer() {
             <ul className="space-y-3 text-sm">
               <li className="flex items-start gap-3">
                 <MapPin className="w-4 h-4 text-[hsl(43_90%_52%)] mt-0.5 flex-shrink-0" />
-                <span className="text-green-200">Shah je market opposite Arshad Super store, Deolai Swat Pakistan</span>
+                <span className="text-green-200">Usman Abad, Mingora, Swat Pakistan</span>
               </li>
               <li className="flex items-center gap-3">
                 <Phone className="w-4 h-4 text-[hsl(43_90%_52%)] flex-shrink-0" />
-                <a href="tel:+923449757557" className="text-green-200 hover:text-[hsl(43_90%_52%)] transition-colors">
-                  +92 344 9757557
+                <a href="tel:+923339499277" className="text-green-200 hover:text-[hsl(43_90%_52%)] transition-colors">
+                  +92 333 9499277
                 </a>
               </li>
               <li className="flex items-center gap-3">

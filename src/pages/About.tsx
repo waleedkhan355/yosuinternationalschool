@@ -66,7 +66,7 @@ export default function About() {
                 </div>
                 <div className="text-left">
                   <p className="font-semibold text-foreground">The Founder</p>
-                  <p className="text-muted-foreground text-sm">The Best Schooling Academy, Deolai</p>
+                  <p className="text-muted-foreground text-sm">The Best Schooling Academy, Mingora</p>
                 </div>
               </div>
             </blockquote>
@@ -150,7 +150,7 @@ export default function About() {
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
             {[
-              { year: "Founded", event: "The Best Schooling Academy established in Deolai, Swat" },
+              { year: "Founded", event: "The Best Schooling Academy established in Mingora, Swat" },
               { year: "English Medium", event: "Launched full English-medium instruction across all classes" },
               { year: "Computer Labs", event: "Opened 3 state-of-the-art computer labs for digital literacy" },
               { year: "STEM Programme", event: "Introduced dedicated STEM curriculum with science experiments" },

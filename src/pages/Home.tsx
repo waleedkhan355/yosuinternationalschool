@@ -44,7 +44,7 @@ export default function Home() {
             transition={{ duration: isMobile ? 0.4 : 0.7 }}
           >
             <span className="inline-block px-4 py-1.5 bg-[hsl(43_90%_52%)/20] border border-[hsl(43_90%_52%)/40] text-[hsl(43_90%_70%)] text-xs font-semibold tracking-widest uppercase rounded-full mb-6">
-              Deolai, Swat Pakistan · d.yosu.edu.pk
+              Usman Abad, Mingora, Swat Pakistan · d.yosu.edu.pk
             </span>
           </motion.div>
 

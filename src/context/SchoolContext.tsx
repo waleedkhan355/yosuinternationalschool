@@ -35,9 +35,9 @@ interface SchoolContextType {
 const defaultSettings: SchoolSettings = {
   heroTitle: "THE BEST SCHOOLING ACADEMY",
   heroSubtitle: "Nurturing Excellence, Building Futures",
-  phone: "+92 344 9757557",
+  phone: "+92 333 9499277",
   email: "info@d.yosu.edu.pk",
-  address: "Shah je market opposite Arshad Super store, Deolai Swat Pakistan",
+  address: "Usman Abad, Mingora, Swat Pakistan",
   curriculumStatement:
     "We deliver an English-medium international curriculum rooted in STEM excellence, character development, and the rich cultural heritage of Swat Valley.",
   totalStudents: 850,
@@ -85,6 +85,12 @@ export function SchoolProvider({ children }: { children: ReactNode }) {
         const data = snap.data() as Partial<SchoolSettings>;
         if (data.heroTitle === "YOSU INTERNATIONAL SCHOOL") {
           data.heroTitle = "THE BEST SCHOOLING ACADEMY";
+        }
+        if (data.phone === "+92 344 9757557" || !data.phone) {
+          data.phone = "+92 333 9499277";
+        }
+        if (data.address === "Shah je market opposite Arshad Super store, Deolai Swat Pakistan" || !data.address) {
+          data.address = "Usman Abad, Mingora, Swat Pakistan";
         }
         setSettings({ ...defaultSettings, ...data } as SchoolSettings);
       } else {

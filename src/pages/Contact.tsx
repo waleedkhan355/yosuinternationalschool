@@ -21,8 +21,8 @@ export default function Contact() {
     setTimeout(() => setSubmitted(false), 5000);
   };
 
-  const whatsappLink = `https://wa.me/923449757557?text=${encodeURIComponent("Hello The Best Schooling Academy, I would like to enquire about admissions.")}`;
-  const mapLink = "https://maps.google.com/?q=Shah+je+market+opposite+Arshad+Super+store+Deolai+Swat+Pakistan";
+  const whatsappLink = `https://wa.me/923339499277?text=${encodeURIComponent("Hello The Best Schooling Academy, I would like to enquire about admissions.")}`;
+  const mapLink = "https://maps.google.com/?q=Usman+Abad+Mingora+Swat+Pakistan";
 
   return (
     <div className="py-16 min-h-screen bg-background">
@@ -42,8 +42,8 @@ export default function Contact() {
               {
                 icon: Phone,
                 title: "Phone",
-                detail: "+92 344 9757557",
-                action: () => window.open("tel:+923449757557"),
+                detail: "+92 333 9499277",
+                action: () => window.open("tel:+923339499277"),
                 cta: "Call Now",
               },
               {
@@ -56,7 +56,7 @@ export default function Contact() {
               {
                 icon: MapPin,
                 title: "Address",
-                detail: "Shah je market opposite Arshad Super store, Deolai Swat Pakistan",
+                detail: "Usman Abad, Mingora, Swat Pakistan",
                 action: () => window.open(mapLink, "_blank"),
                 cta: "Get Directions",
               },
@@ -121,7 +121,7 @@ export default function Contact() {
               className="rounded-xl overflow-hidden border border-border aspect-video"
             >
               <iframe
-                src="https://maps.google.com/maps?q=Deolai+Swat+Pakistan&z=14&output=embed"
+                src="https://maps.google.com/maps?q=Usman+Abad+Mingora+Swat+Pakistan&z=14&output=embed"
                 className="w-full h-full"
                 loading="lazy"
                 title="School location map"
