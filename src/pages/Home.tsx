@@ -223,7 +223,7 @@ export default function Home() {
       <section
         className="relative min-h-[90vh] flex items-center justify-center parallax-bg"
         style={{
-          backgroundImage: `linear-gradient(135deg, hsl(152 55% 10% / 0.92) 0%, hsl(152 45% 18% / 0.85) 50%, hsl(152 35% 22% / 0.80) 100%), url('/primary_campus.jpg')`,
+          backgroundImage: `linear-gradient(135deg, hsl(152 55% 10% / 0.92) 0%, hsl(152 45% 18% / 0.85) 50%, hsl(152 35% 22% / 0.80) 100%), url('${settings.heroBgImage || "/primary_campus.jpg"}')`,
         }}
         data-testid="section-hero"
       >

@@ -37,6 +37,7 @@ export interface SchoolEvent {
 export interface SchoolSettings {
   heroTitle: string;
   heroSubtitle: string;
+  heroBgImage?: string;
   phone: string;
   email: string;
   address: string;

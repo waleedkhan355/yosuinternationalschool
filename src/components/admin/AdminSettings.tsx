@@ -66,6 +66,96 @@ export default function AdminSettings() {
               />
             </div>
             <div>
+              <label className="block text-sm font-semibold text-foreground mb-2">Hero Background Image</label>
+              
+              {/* Presets Grid */}
+              <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-3">
+                {[
+                  {
+                    name: "Swat Primary Campus (Custom)",
+                    url: "/primary_campus.jpg"
+                  },
+                  {
+                    name: "Modern School Front",
+                    url: "https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=1600&q=80"
+                  },
+                  {
+                    name: "Traditional Campus",
+                    url: "https://images.unsplash.com/photo-1541339907198-e08756dedf3f?w=1600&q=80"
+                  },
+                  {
+                    name: "Academic Courtyard",
+                    url: "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=1600&q=80"
+                  }
+                ].map((preset) => {
+                  const isSelected = (form.heroBgImage || "/primary_campus.jpg") === preset.url;
+                  return (
+                    <button
+                      key={preset.url}
+                      type="button"
+                      onClick={() => setForm({ ...form, heroBgImage: preset.url })}
+                      className={`relative aspect-[16/9] rounded-xl overflow-hidden border-2 text-left transition-all ${
+                        isSelected ? "border-primary ring-2 ring-primary/30" : "border-border hover:border-primary/40"
+                      }`}
+                    >
+                      <img
+                        src={preset.url}
+                        alt={preset.name}
+                        className="w-full h-full object-cover"
+                        referrerPolicy="no-referrer"
+                      />
+                      <div className="absolute inset-0 bg-black/40 flex items-end p-2">
+                        <span className="text-[10px] font-bold text-white line-clamp-1">{preset.name}</span>
+                      </div>
+                      {isSelected && (
+                        <div className="absolute top-1.5 right-1.5 bg-primary text-primary-foreground w-4 h-4 rounded-full flex items-center justify-center text-[10px] font-bold">
+                          ✓
+                        </div>
+                      )}
+                    </button>
+                  );
+                })}
+              </div>
+
+              {/* Custom Image URL Input */}
+              <div className="flex gap-2 mb-3">
+                <input
+                  type="text"
+                  placeholder="Or paste any custom background image URL..."
+                  value={form.heroBgImage || ""}
+                  onChange={(e) => setForm({ ...form, heroBgImage: e.target.value })}
+                  className={inputClass}
+                />
+                {form.heroBgImage && form.heroBgImage !== "/primary_campus.jpg" && (
+                  <button
+                    type="button"
+                    onClick={() => setForm({ ...form, heroBgImage: "/primary_campus.jpg" })}
+                    className="px-3 bg-secondary text-foreground text-xs font-semibold rounded-xl hover:bg-secondary/80 whitespace-nowrap"
+                  >
+                    Reset Default
+                  </button>
+                )}
+              </div>
+
+              {/* Live Preview Bar */}
+              <div className="relative h-28 rounded-xl overflow-hidden border border-border">
+                <img
+                  src={form.heroBgImage || "/primary_campus.jpg"}
+                  alt="Live Hero Preview"
+                  className="w-full h-full object-cover filter brightness-[0.4]"
+                  referrerPolicy="no-referrer"
+                />
+                <div className="absolute inset-0 flex flex-col items-center justify-center text-center p-4">
+                  <p className="text-white text-base font-serif font-bold tracking-wide line-clamp-1">
+                    {form.heroTitle || "THE BEST SCHOOLING ACADEMY"}
+                  </p>
+                  <p className="text-green-100/80 text-xs italic line-clamp-1">
+                    "{form.heroSubtitle || "Nurturing Excellence, Building Futures"}"
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div>
               <label className="block text-sm font-semibold text-foreground mb-1.5">Curriculum Statement</label>
               <textarea
                 value={form.curriculumStatement}

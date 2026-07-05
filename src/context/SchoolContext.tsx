@@ -38,6 +38,7 @@ interface SchoolContextType {
 const defaultSettings: SchoolSettings = {
   heroTitle: "THE BEST SCHOOLING ACADEMY",
   heroSubtitle: "Nurturing Excellence, Building Futures",
+  heroBgImage: "/primary_campus.jpg",
   phone: "+92 333 9499277",
   email: "info@d.yosu.edu.pk",
   address: "Usman Abad, Mingora, Swat Pakistan",
